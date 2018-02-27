@@ -1,6 +1,6 @@
 ## Задачи
 
-#Task 1 - Students
+# Task 1 - Students
 
 * Да се напише структура, представляваща студент, която съдържа информация за
   - име на студента;
@@ -35,7 +35,7 @@
   Student& getBestStudent(Student* students, size_t count);
   ```
 
-#Task 2 - Bookstore & Files
+# Task 2 - Bookstore & Files
 
 Имаме структура, описваща книга (`Book`), която съдържа информация за:
 * име на книгата
