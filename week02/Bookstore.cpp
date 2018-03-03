@@ -68,13 +68,13 @@ void initializeBookstore(Bookstore &store, const char *fileName) {
 //    fileOutput << std::endl;
 //}
 
-void printBook(std::ostream &fileOutput, const Book &book) { // function with ostream - upper class for ofstream and can be use for cout
-    fileOutput << book.bookName << std::endl;
-    fileOutput << book.authorName << std::endl;
-    fileOutput << book.ISBN << std::endl;
-    fileOutput << book.genre << std::endl;
-    fileOutput << book.price << std::endl;
-    fileOutput << std::endl;
+void printBook(std::ostream &out, const Book &book) { // function with ostream - upper class for ofstream and can be use for cout
+    out << book.bookName << std::endl;
+    out << book.authorName << std::endl;
+    out << book.ISBN << std::endl;
+    out << book.genre << std::endl;
+    out << book.price << std::endl;
+    out << std::endl;
 }
 
 void printBooks(const Bookstore &store) {
