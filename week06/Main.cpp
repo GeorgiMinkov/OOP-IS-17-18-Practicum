@@ -91,9 +91,11 @@ public:
     }
 
     friend istream& operator>>(istream& is, Movie& movie) {
-
+        delete [] movie.title;
+        delete [] movie.director;
+        
         char* buffer = new char[SIZE];
-
+        
         is.getline(buffer, SIZE);
         movie.title = new char[strlen(buffer) + 1];
         strcpy(movie.title, buffer);
