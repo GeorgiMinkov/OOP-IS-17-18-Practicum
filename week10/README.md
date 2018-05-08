@@ -6,7 +6,7 @@
     {
     public:
         virtual void print() const = 0;
-        virtual void getArea() const = 0;
+        virtual int getArea() const = 0;
     };
 
 Да се реализират следните класове, наследяващи класът Shape:
