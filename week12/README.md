@@ -17,20 +17,20 @@
 
     ...
 
-    list<int> li;
+    vector<int> arr;
     for (int i = 0; i < 5; i++)
-      li.push_back(i);
+      arr.push_back(i);
 
-    list<int> mapped = map(li, &increment);
+    vector<int> mapped = map(arr, &increment);
     // Ще изведе списъка 1, 2, 3, 4, 5
-    for (list<int>::iterator it = mapped.begin(); it != mapped.end(); it++)
-      cout << *it << " ";
+    for (int i = 0; i < mapped.size(); i++)
+      cout << mapped[i] << " ";
 
-    list<int> filtered = filter(li, &filt);
+    vector<int> filtered = filter(arr, &filt);
     // Ще изведе списъка 2, 3, 4
-    for (list<int>::iterator it = filtered.begin(); it != filtered.end(); it++)
-      cout << *it << " ";
+    for (int i = 0; i < filtered.size(); i++)
+      cout << filtered[i] << " ";
 
     // Ще изведе 10, т.е. сумата на елементите, започвайки от начална стойност 0
-    cout << reduce(li, 0, &add);
+    cout << reduce(arr, 0, &add);
 
