@@ -1,3 +1,5 @@
+// ЗАБЕЛЕЖКА = РЕШЕНИЕТО НЕ Е ДОВЪРШЕНО
+
 #include <iostream>
 #include <string>
 #include <vector>
